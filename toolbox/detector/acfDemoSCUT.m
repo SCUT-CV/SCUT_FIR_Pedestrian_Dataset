@@ -46,15 +46,15 @@ opts.posImgDir=[dataDir 'train' int2str2(skip,2) '/images'];
 
 % % pre trian pre test
 % opts.name=[ 'models/AcfSCUT-RGB' ];
-opts.name=[ 'models/scut/AcfSCUT-T' ];
+% opts.name=[ 'models/scut/AcfSCUT-T' ];
 % opts.name=[ 'models/scut/AcfSCUT-T-TM-TO-S' ];
-% opts.name=[ 'models/scut/ACF-T-THOG-S' ];
+opts.name=[ 'models/scut/ACF-T-THOG' ];
 % opts.name=[ 'models/AcfSCUT-RGB-T-TM-TO-THOG' ];
 opts.name=[opts.name '-'  int2str2(skip,2) '-' int2str2(opts.nWeak(end),2) '-' int2str2(opts.nAccNeg,2)];
 
 pLoad={'lbls',{'walk_person','ride_person'},'ilbls',{'people',...
       'person?','people?','squat_person'}};
-evalcond = 'overall';
+evalcond = 'reasonable-all';
 switch(evalcond)
     case 'overall'
     opts.pLoad = [pLoad 'hRng',[20 inf], 'vType',{'none'}];
@@ -96,7 +96,7 @@ opts.imreadf = @imreadThermal;
 
 pCustom(1).enabled = 1;         % T      (T1)
 pCustom(2).enabled = 0;         % TM+TO  (T2)
-pCustom(3).enabled = 0;         % THOG   (T3)
+pCustom(3).enabled = 1;         % THOG   (T3)
 
 pCustom(1).hFunc = @TRaw;
 pCustom(2).hFunc = @TMagTOri;
@@ -127,7 +127,7 @@ I=imread(imgNms{105}); I = rgb2gray(I); tic, bbs=acfDetectT(I,detector); toc
 figure(3); imshow(I); bbApply('draw',bbs); pause(.1);
 
 %% test detector and plot roc (see acfTest)
-evalcond = 'far';
+evalcond = 'reasonable-all';
 switch(evalcond)
     case 'overall'
     opts.pLoad = [pLoad 'hRng',[20 inf], 'vType',{'none','partial'},'xRng',[10 700],'yRng',[10 570]];
