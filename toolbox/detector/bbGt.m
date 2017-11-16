@@ -210,9 +210,15 @@ function [objs,bbs] = bbLoad( fName, varargin )
 
 % get parameters
 df={'format',0,'ellipse',1,'squarify',[],'lbls',[],'ilbls',[],'hRng',[],...
-  'wRng',[],'aRng',[],'arRng',[],'oRng',[],'xRng',[],'yRng',[],'vRng',[]};
-[format,ellipse,sqr,lbls,ilbls,hRng,wRng,aRng,arRng,oRng,xRng,yRng,vRng]...
+  'wRng',[],'aRng',[],'arRng',[],'oRng',[],'xRng',[],'yRng',[],'vRng',[],'vType',{'none'}};
+[format,ellipse,sqr,lbls,ilbls,hRng,wRng,aRng,arRng,oRng,xRng,yRng,vRng,vType]...
   = getPrmDflt(varargin,df,1);
+
+% For KAIST-MultispectralDB
+vVal=0;
+if any( ismember( vType, {'none'} ) ),        vVal=vVal+1;  end
+if any( ismember( vType, {'partial'}) ),      vVal=vVal+2;  end
+if any( ismember( vType, {'heavy'} ) ),       vVal=vVal+4;  end
 
 % load objs
 if( format==0 )
@@ -294,6 +300,17 @@ if(~isempty(vRng)),  for i=1:n, o=objs(i); bb=o.bb; bbv=o.bbv; %#ok<ALIGN>
     objs(i).ign = objs(i).ign || v<vRng(1) || v>vRng(2); end
 end
 
+% For KAIST-MultispectralDB
+if(~isempty(vType)),
+    for i=1:n,        
+        objs(i).occ = 2^objs(i).occ;
+	%if      objs(i).occ == 0,    objs(i).occ = 1;
+        %elseif  objs(i).occ == 1,    objs(i).occ = 2;
+        %elseif  objs(i).occ == 2,    objs(i).occ = 4;
+        %end
+        objs(i).ign = objs(i).ign || ~bitand( objs(i).occ, vVal );                
+    end
+end
 % finally get extent of each bounding box (not trivial if ang~=0)
 if(nargout<=1), return; end; if(n==0), bbs=zeros(0,5); return; end
 bbs=double([reshape([objs.bb],4,[]); [objs.ign]]'); ign=bbs(:,5)==1;
