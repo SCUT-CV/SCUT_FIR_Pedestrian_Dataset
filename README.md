@@ -9,7 +9,7 @@ The SCUT FIR Pedestrian Datasets is a large far infrared pedestrian detection da
 
 more details see [statistic.xlsx](dataset/statistic.xlsx).
 
-### Training Set 
+#### Training Set
 
 - S0-S10
 
@@ -23,7 +23,7 @@ more details see [statistic.xlsx](dataset/statistic.xlsx).
 | people?      | 6855              | 8479           | 2457        | 153    | 55.42                |
 | Summary      | 70517             | 240297         | 59856       | 3703   | 64.89                |
 
-### Testing Set
+#### Testing Set
 
 - S11-S20
 
