@@ -3,11 +3,11 @@ A new benchmark dataset and baseline for on-road FIR pedestrian detection
 
 ### Description
 ![example](dataset/example/example.png)
-The SCUT FIR Pedestrian Datasets is a large far infrared pedestrian detection dataset. It  consist of about 11 hours-long image sequences ($\sim 10^6$ frames) at a rate of 25 Hz by driving through diverse traffic scenarios at a speed less than 80 km/h. The image sequences were collected from 11 road sections under 4 kinds of scenes including downtown, suburbs, expressway and campus in Guangzhou, China. We annotated 211,011 frames for a total number of 477,907 bounding boxes around 7,659 unique pedestrians.
+The SCUT FIR Pedestrian Datasets is a large far infrared pedestrian detection dataset. It  consist of about 11 hours-long image sequences ($\sim 10^6​$ frames) at a rate of 25 Hz by driving through diverse traffic scenarios at a speed less than 80 km/h. The image sequences were collected from 11 road sections under 4 kinds of scenes including downtown, suburbs, expressway and campus in Guangzhou, China. We annotated 211,011 frames for a total number of 477,907 bounding boxes around 7,659 unique pedestrians.
 
 ### Statistic of training and testing set
 
-more details see [statistic.xlsx](dataset/statistic.xlsx).
+more details see [statistic.xlsx](https://github.com/SCUT-CV/SCUT_FIR_Pedestrian_Dataset/tree/master/dataset/statistic.xlsx).
 
 #### Training Set
 
