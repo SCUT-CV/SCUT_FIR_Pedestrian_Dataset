@@ -1,0 +1,6 @@
+[submodule "datatool"]
+	path = datatool
+	url = https://github.com/xzhewei/datatool
+[submodule "toolbox"]
+	path = toolbox
+	url = https://github.com/xzhewei/toolbox.git
