@@ -42,7 +42,7 @@ more details see [statistic.xlsx](https://github.com/SCUT-CV/SCUT_FIR_Pedestrian
 
 videos [GoogleDrive](https://drive.google.com/open?id=0B5mvevJ3ivDKbXdkVlNNSGJDVGM) [BaiduYun](http://pan.baidu.com/s/1geBkEMf)
 
-annotations [GoogleDrive]() [BaiduYun]() (will release after paper accepted)
+annotations [GoogleDrive](https://drive.google.com/file/d/0B5mvevJ3ivDKbW9sVmRCTmpwTjg/view?usp=sharing) [BaiduYun](https://pan.baidu.com/s/1EAV9agPCTSvjG3bCoJdRXg) (please contact with xzhewei@gmail.com)
 
 ### Tool
 
