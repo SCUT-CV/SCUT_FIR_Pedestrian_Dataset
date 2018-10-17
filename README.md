@@ -51,23 +51,21 @@ annotations [GoogleDrive](https://drive.google.com/drive/folders/1rCZgCB1FwQNuXA
 - [datatool](https://github.com/SCUT-CV/SCUT_FIR_Pedestrian_Dataset/tree/master/datatool).  Evaluation/labeling code for our dataset which is based on [Caltech Dataset](http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/).
 - [toolbox](https://github.com/SCUT-CV/SCUT_FIR_Pedestrian_Dataset/tree/master/toolbox). The `datatool` depended tool which is based on [Piotr's Matlab Toolbox](https://pdollar.github.io/toolbox/index.html).
 
-### Baseline
-- Thermal Faster R-CNN (TFRCN) in [xzhewei/TFRCN](https://github.com/xzhewei/TFRCN) released
-
 ### Benchmark Results
 
 #### Algorithm List
 
 |                      | Reasonable All | Overall |
 | -------------------- | -------------- | ------- |
-| RPN+BF               | 8.28           | 25.19   |
-| TFRCN                | 9.98           | 32.32   |
-| RPN (RPN+BF)         | 12.07          | 32.94   |
-| Faster R-CNN-vanilla | 19.75          | 52.00   |
-| RPN-vanilla          | 34.87          | 61.20   |
-| ACF-T+THOG           | 43.70          | 62.11   |
+| FRCN-modified        | 17.73          | 38.68   |
+| RPN+BF               | 18.88          | 41.57   |
+| MSCNN                | 19.21          | 58.02   |
+| YOLOv3               | 32.54          | 58.09   |
+| Faster R-CNN-vanilla | 36.78          | 66.32   |
+| YOLOv2               | 47.96          | 69.44   |
+| ACF-T+THOG           | 62.75          | 76.60   |
 
-Ther mertic is log-average miss rate over the range of [$10^{-2}$, $10^0$]. 
+Ther mertic is log-average miss rate over the range of [$10^{-4}$, $10^0$]. 
 
 #### ROC
 
