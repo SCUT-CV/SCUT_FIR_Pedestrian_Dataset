@@ -54,6 +54,7 @@ annotations [GoogleDrive](https://drive.google.com/drive/folders/1rCZgCB1FwQNuXA
 ### Benchmark Results
 
 #### Algorithm List
+The mertic is log-average miss rate over the range of [$10^{-4}$, $10^0$] FPPI. 
 
 |                      | Reasonable All | Overall |
 | -------------------- | -------------- | ------- |
@@ -65,7 +66,16 @@ annotations [GoogleDrive](https://drive.google.com/drive/folders/1rCZgCB1FwQNuXA
 | YOLOv2               | 47.96          | 69.44   |
 | ACF-T+THOG           | 62.75          | 76.60   |
 
-Ther mertic is log-average miss rate over the range of [$10^{-4}$, $10^0$]. 
+The range of [$10^{-2}$, $10^0$] FPPI which we used before, there are several detector have been evaluated.
+
+|                      | Reasonable All | Overall |
+| -------------------- | -------------- | ------- |
+| RPN+BF               | 8.28           | 25.19   |
+| TFRCN                | 9.98           | 32.32   |
+| RPN (RPN+BF)         | 12.07          | 32.94   |
+| Faster R-CNN-vanilla | 19.75          | 52.00   |
+| RPN-vanilla          | 34.87          | 61.20   |
+| ACF-T+THOG           | 43.70          | 62.11   |
 
 #### ROC
 
