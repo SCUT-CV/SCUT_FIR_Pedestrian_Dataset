@@ -5,6 +5,21 @@ A new benchmark dataset and baseline for on-road FIR pedestrian detection
 ![example](dataset/example/example.png)
 The SCUT FIR Pedestrian Datasets is a large far infrared pedestrian detection dataset. It  consist of about 11 hours-long image sequences ($\sim 10^6​$ frames) at a rate of 25 Hz by driving through diverse traffic scenarios at a speed less than 80 km/h. The image sequences were collected from 11 road sections under 4 kinds of scenes including downtown, suburbs, expressway and campus in Guangzhou, China. We annotated 211,011 frames for a total number of 477,907 bounding boxes around 7,659 unique pedestrians.
 
+### Citing SCUT FIR Pedestrian Dataset
+If you find SCUT FIR Pedestrian Dataset useful in your research, please consider citing:
+```
+@article{xu2019,
+author = {Xu, Zhewei and Zhuang, Jiajun and Liu, Qiong and Zhou, Jingkai and Peng, Shaowu},
+title = {{Benchmarking a large-scale FIR dataset for on-road pedestrian detection}},
+journal = {Infrared Physics {\&} Technology},
+pages = {199--208},
+volume = {96},
+year = {2019}
+doi = {https://doi.org/10.1016/j.infrared.2018.11.007},
+issn = {1350-4495},
+}
+```
+
 ### Statistic of training and testing set
 
 more details see [statistic.xlsx](https://github.com/SCUT-CV/SCUT_FIR_Pedestrian_Dataset/tree/master/dataset/statistic.xlsx).
@@ -42,7 +57,7 @@ more details see [statistic.xlsx](https://github.com/SCUT-CV/SCUT_FIR_Pedestrian
 
 videos [GoogleDrive](https://drive.google.com/open?id=0B5mvevJ3ivDKbXdkVlNNSGJDVGM) [BaiduYun](http://pan.baidu.com/s/1geBkEMf)
 
-annotations [GoogleDrive](https://drive.google.com/drive/folders/1rCZgCB1FwQNuXAzD7PWqKD8BjtwfSx0E?usp=sharing) [BaiduYun](https://pan.baidu.com/s/1EAV9agPCTSvjG3bCoJdRXg) (please contact with xzhewei@gmail.com)
+annotations [GoogleDrive](https://drive.google.com/drive/folders/1rCZgCB1FwQNuXAzD7PWqKD8BjtwfSx0E?usp=sharing) [BaiduYun](https://pan.baidu.com/s/1B5-7uQ_UMLgXI84MIfw6jA) (open access)
 
 ### Tool
 
