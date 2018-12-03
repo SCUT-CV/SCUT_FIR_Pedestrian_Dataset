@@ -65,6 +65,7 @@ annotations [GoogleDrive](https://drive.google.com/drive/folders/1rCZgCB1FwQNuXA
 - `Seq video format`. Data Format is compatible with Caltech Pedestrian Dataset Format
 - [datatool](https://github.com/xzhewei/datatool).  Evaluation/labeling code for our dataset which is based on [Caltech Dataset](http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/).
 - [toolbox](https://github.com/xzhewei/toolbox/tree/scut). The `datatool` depended tool which is based on [Piotr's Matlab Toolbox](https://pdollar.github.io/toolbox/index.html).
+- [pydatatool](https://www.github.com/xzhewei/pydatatool). If you want to use this dataset as coco style annotation in Detectron framework, please use this python version datatool.
 
 ### Benchmark Results
 
