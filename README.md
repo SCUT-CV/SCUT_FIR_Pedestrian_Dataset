@@ -55,7 +55,7 @@ more details see [statistic.xlsx](https://github.com/SCUT-CV/SCUT_FIR_Pedestrian
 
 ### Download
 
-videos [GoogleDrive](https://drive.google.com/open?id=0B5mvevJ3ivDKbXdkVlNNSGJDVGM) [BaiduYun](https://pan.baidu.com/s/1t-Hm4861h7HBJ9Jzza64og) code: x9lh
+videos [GoogleDrive](https://drive.google.com/drive/folders/0B5mvevJ3ivDKbXdkVlNNSGJDVGM?resourcekey=0-Lvz6X5aOHUFzl4QYqpDVMg&usp=sharing) [BaiduYun](https://pan.baidu.com/s/1t-Hm4861h7HBJ9Jzza64og) code: x9lh
 
 annotations [GoogleDrive](https://drive.google.com/drive/folders/1rCZgCB1FwQNuXAzD7PWqKD8BjtwfSx0E?usp=sharing) [BaiduYun](https://pan.baidu.com/s/1h2uzjeOK_KjRaQz-JNtzJg) code: uczk (open access)
 
